@@ -70,13 +70,14 @@ h4 {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
+  border-radius: 15px;
   background: hsla(178, 100%, 50%, 1);
 }
 
 .primary-card-img:hover .card-img-overlay{
   opacity: .75;
   transition: .3s ease;
-  border-radius: 15px;
+  /* border-radius: 15px; */
   cursor: pointer;
 }
 
