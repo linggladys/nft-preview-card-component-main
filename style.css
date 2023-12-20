@@ -1,0 +1,157 @@
+/* CSS reset attributes */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Outfit", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  overflow-wrap: break-word;
+}
+
+/* the NFT card components */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.primary-card {
+  max-width: 355px;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 15px;
+  background-color: hsl(216, 50%, 16%);
+}
+
+.primary-card-img img {
+  border-radius: 15px;
+  object-fit: cover;
+  transition: .3s ease;
+}
+
+.primary-card-img {
+  background: hsla(178, 100%, 50%, 1);
+  border-radius: 15px;
+}
+
+.primary-card-img img:hover{
+  opacity: .25;
+  transition: .3s ease;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.heading a:link,
+.heading a:visited {
+  text-decoration: none;
+  color: hsl(0, 100%, 100%);
+  transition: .3s ease;
+}
+
+.heading a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: hsl(178, 100%, 50%);
+  transition: .3s ease;
+}
+
+.primary-card-info{
+  padding: 20px 0;
+}
+
+.heading, .primary-card-info p{
+  margin-bottom: 20px;
+}
+
+.primary-card-info p{
+  font-size: 1.125rem;
+  color: hsl(215, 51%, 70%);
+}
+
+.primary-card-categories {
+  display: grid;
+  align-items: center;
+  grid-template-columns:1fr 1fr;
+  cursor: default
+}
+
+.nft-price p{
+color: hsl(178, 100%, 50%);
+font-weight: bold;
+}
+
+.nft-price img, .sales-remaining img{
+  float:left;
+  margin-right: 10px; 
+}
+
+.creation-of-info {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  margin-top:20px;
+}
+
+.avatar-info img {
+  border: 3px solid white;
+  border-radius: 50%;
+  max-width: 50px;
+}
+
+.avatar-info{
+  position: relative;
+  width: 50%;
+}
+
+.avatar-overlay{
+  position: absolute;
+  border-radius: 50%;
+  max-width: 50px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .3s ease;
+  background: hsla(178, 100%, 50%, 1);
+}
+
+.avatar-info:hover .avatar-overlay{
+  opacity: .75;
+  cursor:pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
