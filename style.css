@@ -50,22 +50,42 @@ h4 {
   background-color: hsl(216, 50%, 16%);
 }
 
+.primary-card-img{
+  position: relative;
+}
+
 .primary-card-img img {
   border-radius: 15px;
   object-fit: cover;
   transition: .3s ease;
 }
 
-.primary-card-img {
+.card-img-overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
   background: hsla(178, 100%, 50%, 1);
-  border-radius: 15px;
 }
 
-.primary-card-img img:hover{
-  opacity: .25;
+.primary-card-img:hover .card-img-overlay{
+  opacity: .75;
   transition: .3s ease;
   border-radius: 15px;
   cursor: pointer;
+}
+
+.card-img-overlay img{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 50%;
 }
 
 .heading a:link,
