@@ -54,7 +54,7 @@ This more of a level-up version of the 1st challenge (the QR code). My output is
 ### Continued development
 
 It is pretty challenging to code for the colour overlay to occur as users hover over. There's still more space to learn and sharpen my CSS skills.
-*
+
 
 ### Useful resources
 
